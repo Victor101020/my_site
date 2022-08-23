@@ -9,6 +9,7 @@ def home_page(request):
     user_agent = request.META["HTTP_USER_AGENT"]
     path = request.path
 
+
     return HttpResponse('<p>Hello World</p>'
                         '<p>HOST: {}</p>'
                         '<p>USER_AGENT: {}</p>'
