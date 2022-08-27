@@ -1,13 +1,13 @@
 <!DOCTYPE html>
-<!--{% load static %}-->
+{% load static %}
 <html lang="en">
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>About</title>
-<!--    <link rel="stylesheet" href="{% static 'css/style.css' %}" />-->
-    <link rel="stylesheet" href='css/style.css'>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" />
+<!--    <link rel="stylesheet" href='css/style.css'>-->
 </head>
 <body>
     <header class="header">
@@ -15,24 +15,24 @@
             <div class="header_wrapper">
                 <div class="heaader_log">
                 <a href="/" class="header_logo_link">
-                    <img src="./image/avatar-batman.svg" alt="batman" class="header_logo_pic">
-<!--                    <img src="{% static 'image/avatar-batman.svg' %}" alt="batman" class="header_logo_pic">-->
+<!--                    <img src="./image/avatar-batman.svg" alt="batman" class="header_logo_pic">-->
+                    <img src="{% static 'image/avatar-batman.svg' %}" alt="batman" class="header_logo_pic">
                 </a>
                 </div>
 
                 <nav class="header_nav">
                     <ul class="header_list">
                         <li class="header_item">
-                            <a href="#!" class="header_link">CV</a>
+                            <a href="/cv/" class="header_link">CV</a>
                         </li>
                         <li class="header_item">
                             <a href="#!" class="header_link">About</a>
                         </li>
                         <li class="header_item">
-                            <a href="#!" class="header_link">Contacts</a>
+                            <a href="/contacts/" class="header_link">Contacts</a>
                         </li>
                         <li class="header_item">
-                            <a href="#!" class="header_link">Blog</a>
+                            <a href="/blog/" class="header_link">Blog</a>
                         </li>
                     </ul>
                 </nav>
@@ -45,7 +45,7 @@
             <div class="about_wrapper">
                 <div class="block_about_me">
                     <div class="img_title_about">
-                        <img src="./image/face.jpg" alt="batman" class="img_face_about">
+                        <img src="{% static '/image/face.jpg' %}" alt="batman" class="img_face_about">
                     </div>
                     <div style="margin-top: 15px;" class="desc_title_about">
                         <h1 style="font-size: 40px; margin-bottom: 15px;">Виктор Тарасов, 26 лет</h1>
@@ -85,15 +85,15 @@
                     <div class="banner">
                         <div class="slider">
                             <div class="slider-line">
-                                <img style="width: 1000px;" src="./image/sert1.jpg" alt="">
-                                <img style="width: 1000px;" src="./image/sert2.jpg" alt="">
-                                <img style="width: 1000px;" src="./image/sert3.jpg" alt="">
-                                <img style="width: 1000px;" src="./image/sert4.jpg" alt="">
-                                <img style="width: 1000px;" src="./image/sert5.jpg" alt="">
-                                <img style="width: 1000px;" src="./image/sert6.jpg" alt="">
-                                <img style="width: 1000px;" src="./image/sert7.jpg" alt="">
-                                <img style="width: 1000px;" src="./image/sert8.jpg" alt="">
-                                <img style="width: 1000px;" src="./image/sert9.jpg" alt="">
+                                <img style="width: 1000px;" src="{% static '/image/sert1.jpg' %}" alt="">
+                                <img style="width: 1000px;" src="{% static '/image/sert2.jpg' %}" alt="">
+                                <img style="width: 1000px;" src="{% static '/image/sert3.jpg' %}" alt="">
+                                <img style="width: 1000px;" src="{% static '/image/sert4.jpg' %}" alt="">
+                                <img style="width: 1000px;" src="{% static '/image/sert5.jpg' %}" alt="">
+                                <img style="width: 1000px;" src="{% static '/image/sert6.jpg' %}" alt="">
+                                <img style="width: 1000px;" src="{% static '/image/sert7.jpg' %}" alt="">
+                                <img style="width: 1000px;" src="{% static '/image/sert8.jpg' %}" alt="">
+                                <img style="width: 1000px;" src="{% static '/image/sert9.jpg' %}" alt="">
                             </div>
                         </div>
                         <div style="background: black" class="left">&lt;</div>
@@ -117,7 +117,7 @@
             </div>
         </section>
     </main>
-    <script src="js/main.js">
+    <script src="{% static '/js/main.js' %}" >
     </script>
 </body>
 </html>

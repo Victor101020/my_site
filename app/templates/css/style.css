@@ -460,7 +460,7 @@ img{
 }
 
 .header_logo_pic{
-    padding: 10px;
+    padding: 0px;
 }
 
 .header_item:last-child{
@@ -589,7 +589,17 @@ img{
 .footer_menu_item{
     margin-right: 82px;
 }
+
+.header_nav{
+    height: 400px;
+    width: 100px;
 }
+
+.header_list_footer{
+    display: flex;
+
+}
+
 /* footer styles end */
 
 /*  styles CV page start */
