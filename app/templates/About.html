@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<!--{% load static %}-->
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>About</title>
+<!--    <link rel="stylesheet" href="{% static 'css/style.css' %}" />-->
+    <link rel="stylesheet" href='css/style.css'>
+</head>
+<body>
+    <header class="header">
+        <div class="wrapper">
+            <div class="header_wrapper">
+                <div class="heaader_log">
+                <a href="/" class="header_logo_link">
+                    <img src="./image/avatar-batman.svg" alt="batman" class="header_logo_pic">
+<!--                    <img src="{% static 'image/avatar-batman.svg' %}" alt="batman" class="header_logo_pic">-->
+                </a>
+                </div>
+
+                <nav class="header_nav">
+                    <ul class="header_list">
+                        <li class="header_item">
+                            <a href="#!" class="header_link">CV</a>
+                        </li>
+                        <li class="header_item">
+                            <a href="#!" class="header_link">About</a>
+                        </li>
+                        <li class="header_item">
+                            <a href="#!" class="header_link">Contacts</a>
+                        </li>
+                        <li class="header_item">
+                            <a href="#!" class="header_link">Blog</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main class="main">
+        <section class="intro">
+            <div class="about_wrapper">
+                <div class="block_about_me">
+                    <div class="img_title_about">
+                        <img src="./image/face.jpg" alt="batman" class="img_face_about">
+                    </div>
+                    <div style="margin-top: 15px;" class="desc_title_about">
+                        <h1 style="font-size: 40px; margin-bottom: 15px;">Виктор Тарасов, 26 лет</h1>
+                        <h2 style="font-size: 28px; margin-bottom: 5px;">Родился и вырос в г. Рязань, на данный момент проживаю в Москве.</h2>
+                        <h2 style="font-size: 28px; margin-bottom: 5px;">Окончил Рязанский государственный радиотехнический университет им. В.Ф. Уткина (РГРТУ) в 2018г.(бакалавриат), после поступил в магистратуру и в 2020г. получил диплом с отличием</h2>
+                    </div>
+                </div>
+                <h2 style="font-size: 40px; margin: 20px; text-align: center;">Карьерный путь </h2>
+                <div style="background: white;box-shadow: 0px 2px 20px rgba(21, 24, 36, 0.15993);" class="block_about_first_work">
+                    <div>
+                        <h2>Тинькофф Банк</h2>
+                        <h3>Октябрь 2020 - н. вр.</h3>
+                    </div>
+                    <div>
+                        <p style="padding-bottom: 10px">АНАЛИТИК</p>
+                        Обязанности: Выявление багов в системе, создание ТЗ на доработку, оптимизация паказателей работы группы, создание технической документации, создание новых инцидентов, обработка обращений пользователей, сбор требований на создание новго функционала, постановка задач на создание нового функционала, взаимодействие в отделами разработки.<br>
+                        <p style="padding-top: 10px">Используемые технологии: Zeppelin\Helicopter, SQL(PostgreSQL), Swagger, Greenplum, Elasticsearch(Kibana), Sage, Grafana, REST\SOAP, Outlook, Excel, Linux, Python(Pandas, Numpy, matplotlib, seaborn).</p>
+                    </div>
+                </div>
+                <div style="background: white; box-shadow: 0px 2px 20px rgba(21, 24, 36, 0.15993);" class="block_about_first_work">
+                    <div>
+                        <h2>ОАО ПРИО-Внешторгбанк </h2>
+                        <h3>Июнь 2018-Октябрь 2020</h3>
+                        <h4>2 года 5 месяцев</h4>
+                    </div>
+                    <div>
+                        <p style="padding-bottom: 10px">АНАЛИТИК</p>
+                        Обязанности: Анализ показателей, создание отчетов, улучшение рабочего процесса, выявление багов  в работе системы, создание технической документации, взаимодействие с отделом разработки.<br>
+                        <p style="padding-top: 10px">Используемые технологии: SQL, Outlook, Excel, Python</p>
+                    </div>
+                </div>
+                <div>
+                    <h2 style="font-size: 40px; margin: 20px; text-align: center;">Сертификаты</h2>
+                    <div class="banner">
+                        <div class="slider">
+                            <div class="slider-line">
+                                <img style="width: 1000px;" src="./image/sert1.jpg" alt="">
+                                <img style="width: 1000px;" src="./image/sert2.jpg" alt="">
+                                <img style="width: 1000px;" src="./image/sert3.jpg" alt="">
+                                <img style="width: 1000px;" src="./image/sert4.jpg" alt="">
+                                <img style="width: 1000px;" src="./image/sert5.jpg" alt="">
+                                <img style="width: 1000px;" src="./image/sert6.jpg" alt="">
+                                <img style="width: 1000px;" src="./image/sert7.jpg" alt="">
+                                <img style="width: 1000px;" src="./image/sert8.jpg" alt="">
+                                <img style="width: 1000px;" src="./image/sert9.jpg" alt="">
+                            </div>
+                        </div>
+                        <div style="background: black" class="left">&lt;</div>
+                        <div style="background: black" class="right">&gt;</div>
+                        <div class="modal">
+                            <div class="title">
+                                Количество: 9
+                            </div>
+
+                        </div>
+                    </div>
+                    <h2 style="font-size: 40px; margin: 20px; text-align: center;">Интересы</h2>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="js/main.js">
+    </script>
+</body>
+</html>
