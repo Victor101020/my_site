@@ -23,4 +23,5 @@ urlpatterns = [
     path("", TemplateView.as_view(template_name='about.html')),
     path("general/", views.general_page, name='general page'),
 
+
 ]
