@@ -1,13 +1,13 @@
 <!DOCTYPE html>
-<!--{% load static %}-->
+{% load static %}
 <html lang="en">
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>General</title>
-<!--    <link rel="stylesheet" href="{% static 'css/style.css' %}" />-->
-    <link rel="stylesheet" href='css/style.css'>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" />
+<!--    <link rel="stylesheet" href='css/style.css'>-->
 </head>
 <body>
     <header class="header">
@@ -15,24 +15,24 @@
             <div class="header_wrapper">
                 <div class="heaader_log">
                 <a href="/" class="header_logo_link">
-                    <img src="./image/avatar-batman.svg" alt="batman" class="header_logo_pic">
-<!--                    <img src="{% static 'image/avatar-batman.svg' %}" alt="batman" class="header_logo_pic">-->
+<!--                    <img src="./image/avatar-batman.svg" alt="batman" class="header_logo_pic">-->
+                    <img style=" width: 70px; height: 70px;" src="{% static 'image/avatar-batman.svg' %}" alt="batman" class="header_logo_pic">
                 </a>
                 </div>
 
                 <nav class="header_nav">
                     <ul class="header_list">
                         <li class="header_item">
-                            <a href="#!" class="header_link">CV</a>
+                            <a href="cv/" class="header_link">CV</a>
                         </li>
                         <li class="header_item">
-                            <a href="#!" class="header_link">About</a>
+                            <a href="about/" class="header_link">About</a>
                         </li>
                         <li class="header_item">
-                            <a href="#!" class="header_link">Contacts</a>
+                            <a href="contacts/" class="header_link">Contacts</a>
                         </li>
                         <li class="header_item">
-                            <a href="#!" class="header_link">Blog</a>
+                            <a href="blog/" class="header_link">Blog</a>
                         </li>
                     </ul>
                 </nav>
@@ -59,28 +59,28 @@
         <div class="wrapper">
             <div class="footer_item">
                 <div class="=footer_logo">
-                    <img src="./image/logo.svg" alt="batman" class="footer_logo_pic">
+                    <img src="{% static 'image/logo.svg' %}" alt="batman" class="footer_logo_pic">
                 </div>
-                <nav class="header_nav">
-                    <ul class="header_list">
-                        <li class="header_item">
-                            <a href="#!" class="header_link">CV</a>
-                        </li>
-                        <li class="header_item">
-                            <a href="#!" class="header_link">About</a>
-                        </li>
-                        <li class="header_item">
-                            <a href="#!" class="header_link">Contacts</a>
-                        </li>
-                        <li class="header_item">
-                            <a href="#!" class="header_link">Blog</a>
-                        </li>
-                    </ul>
-                </nav>
+                <div class="header_nav">
+                    <div class="header_list_footer">
+                            <a href="https://github.com/Victor101020" target="_blank" class="header_link">
+                                <img style="background: white; width: 40px; height: 40px;" src="{% static 'image/github-logo.png' %}" alt="batman" class="footer_logo_pic">
+                            </a>
+                            <a href="https://career.habr.com/victortarasov23" target="_blank" class="header_link">
+                                <img style="background: white; width: 40px; height: 40px;" src="{% static 'image/habr-logo.png' %}" alt="batman" class="footer_logo_pic">
+                            </a>
+                            <a href="https://www.linkedin.com/in/victortarasov1995/" target="_blank" class="header_link">
+                                <img style="width: 40px; height: 40px;" src="{% static 'image/linkedin-logo.png' %}" alt="batman" class="footer_logo_pic">
+                            </a>
+                            <a href="https://t.me/onei977" target="_blank" class="header_link">
+                                <img style="width: 40px; height: 40px;" src="{% static 'image/telegram-logo.png' %}" alt="batman" class="footer_logo_pic">
+                            </a>
+                    </div>
+                </div>
             </div>
         </div>
     </footer>
-    <script src="js/main.js">
+    <script src="{% static 'js/main.js' %}">
     </script>
 </body>
 </html>
